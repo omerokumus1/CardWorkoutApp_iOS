@@ -26,7 +26,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYz-yV-2sF">
                                 <rect key="frame" x="84" y="613" width="260" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NDa-tX-v3A"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="d2p-dd-KR0"/>
@@ -35,50 +35,63 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Stop!"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
+                                <buttonConfiguration key="configuration" style="plain" title="Stop!" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-F0-w92">
                                 <rect key="frame" x="84" y="683" width="115" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="R3l-JF-9Sr"/>
                                     <constraint firstAttribute="height" constant="50" id="qLk-ek-HPm"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Restart">
+                                <buttonConfiguration key="configuration" style="plain" title="Restart" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvS-Zm-AR7">
-                                <rect key="frame" x="228.33333333333337" y="683" width="115" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <rect key="frame" x="229" y="683" width="115" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="eU2-oH-oMB"/>
                                     <constraint firstAttribute="height" constant="50" id="lg1-rl-IrU"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rules">
+                                <buttonConfiguration key="configuration" style="plain" title="Rules" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="CxT-Se-2ze" kind="presentation" id="Xnx-mf-cnh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kvS-Zm-AR7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mEd-F0-w92" secondAttribute="trailing" constant="8" symbolic="YES" id="8m2-GE-GLb"/>
+                            <constraint firstItem="kvS-Zm-AR7" firstAttribute="leading" secondItem="mEd-F0-w92" secondAttribute="trailing" constant="30" id="8m2-GE-GLb"/>
                             <constraint firstItem="mEd-F0-w92" firstAttribute="top" secondItem="zYz-yV-2sF" secondAttribute="bottom" constant="20" id="D4O-cV-dkS"/>
                             <constraint firstItem="DXT-NZ-82O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7Y-Xi-bWu"/>
                             <constraint firstItem="kvS-Zm-AR7" firstAttribute="centerY" secondItem="mEd-F0-w92" secondAttribute="centerY" id="c9w-s7-gJO"/>
                             <constraint firstItem="DXT-NZ-82O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="eED-6i-ZUV"/>
                             <constraint firstItem="mEd-F0-w92" firstAttribute="leading" secondItem="zYz-yV-2sF" secondAttribute="leading" id="eR5-4g-Pi1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kvS-Zm-AR7" secondAttribute="trailing" constant="84.666666666666629" id="jVr-Lz-Snc"/>
                             <constraint firstItem="zYz-yV-2sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uwZ-Dq-dyf"/>
                             <constraint firstItem="zYz-yV-2sF" firstAttribute="top" secondItem="DXT-NZ-82O" secondAttribute="bottom" constant="50" id="wl5-v4-bwb"/>
                         </constraints>
@@ -87,6 +100,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qrY-Jk-vd3">
+            <objects>
+                <viewController id="CxT-Se-2ze" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HNs-py-ZjY">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-xg-VvL">
+                                <rect key="frame" x="333" y="20" width="75" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="TKQ-F7-Lim"/>
+                                    <constraint firstAttribute="height" constant="50" id="cD7-kX-OHB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgG-Go-glB">
+                                <rect key="frame" x="0.0" y="150" width="428" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of exercise you do.  J = 11, Q = 12, K = 13, A = 14" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-4G-wd1">
+                                <rect key="frame" x="39" y="237.99999999999997" width="350" height="95.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="jnf-9L-JmO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-ups  ❤️ = Sit-ups  ♣️ = Burpees  ♦️ = Jumping Jacks" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHn-Le-Fma">
+                                <rect key="frame" x="114" y="433.66666666666669" width="200" height="167.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="e5S-DV-VNl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTU-G5-gq9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VgG-Go-glB" firstAttribute="leading" secondItem="HNs-py-ZjY" secondAttribute="leading" id="Brl-Ug-7wG"/>
+                            <constraint firstItem="eTU-G5-gq9" firstAttribute="trailing" secondItem="VgG-Go-glB" secondAttribute="trailing" id="YJI-wa-Qh6"/>
+                            <constraint firstItem="ldk-4G-wd1" firstAttribute="top" secondItem="VgG-Go-glB" secondAttribute="bottom" constant="40" id="fDZ-aY-1Hh"/>
+                            <constraint firstItem="eTU-G5-gq9" firstAttribute="trailing" secondItem="jIA-xg-VvL" secondAttribute="trailing" constant="20" id="gzA-Dc-DJR"/>
+                            <constraint firstItem="UHn-Le-Fma" firstAttribute="centerX" secondItem="HNs-py-ZjY" secondAttribute="centerX" id="he8-Yf-rxt"/>
+                            <constraint firstItem="jIA-xg-VvL" firstAttribute="top" secondItem="HNs-py-ZjY" secondAttribute="top" constant="20" id="iVz-Fn-G7r"/>
+                            <constraint firstItem="VgG-Go-glB" firstAttribute="top" secondItem="HNs-py-ZjY" secondAttribute="top" constant="150" id="lna-qh-Haa"/>
+                            <constraint firstItem="VgG-Go-glB" firstAttribute="centerX" secondItem="HNs-py-ZjY" secondAttribute="centerX" id="mMP-pd-yzF"/>
+                            <constraint firstItem="UHn-Le-Fma" firstAttribute="top" secondItem="ldk-4G-wd1" secondAttribute="bottom" constant="100" id="rgx-4B-4IX"/>
+                            <constraint firstItem="ldk-4G-wd1" firstAttribute="centerX" secondItem="HNs-py-ZjY" secondAttribute="centerX" id="xlH-Bm-Pex"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxX-WM-JMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="-34"/>
         </scene>
     </scenes>
     <resources>
