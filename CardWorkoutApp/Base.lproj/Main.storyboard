@@ -43,6 +43,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffv-Vq-7BW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-F0-w92">
                                 <rect key="frame" x="84" y="683" width="115" height="50"/>
@@ -60,6 +63,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9O-Ca-8gr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvS-Zm-AR7">
                                 <rect key="frame" x="229" y="683" width="115" height="50"/>
@@ -79,6 +85,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3E-Bu-Lyo"/>
                                     <segue destination="CxT-Se-2ze" kind="presentation" id="Xnx-mf-cnh"/>
                                 </connections>
                             </button>
@@ -96,15 +103,18 @@
                             <constraint firstItem="zYz-yV-2sF" firstAttribute="top" secondItem="DXT-NZ-82O" secondAttribute="bottom" constant="50" id="wl5-v4-bwb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="DXT-NZ-82O" id="b6w-JX-4lT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>
         </scene>
-        <!--View Controller-->
+        <!--RulesVC-->
         <scene sceneID="qrY-Jk-vd3">
             <objects>
-                <viewController id="CxT-Se-2ze" sceneMemberID="viewController">
+                <viewController id="CxT-Se-2ze" customClass="RulesVC" customModule="CardWorkoutApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HNs-py-ZjY">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +129,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Close">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="CxT-Se-2ze" eventType="touchUpInside" id="Vow-J8-EMw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgG-Go-glB">
                                 <rect key="frame" x="0.0" y="150" width="428" height="48"/>

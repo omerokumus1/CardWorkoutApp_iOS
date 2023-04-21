@@ -13,6 +13,8 @@
 		D0F56ECD29F2EACA003C9DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F56ECB29F2EACA003C9DA0 /* Main.storyboard */; };
 		D0F56ECF29F2EACC003C9DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F56ECE29F2EACC003C9DA0 /* Assets.xcassets */; };
 		D0F56ED229F2EACC003C9DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F56ED029F2EACC003C9DA0 /* LaunchScreen.storyboard */; };
+		D0F56EDA29F30797003C9DA0 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F56ED929F30797003C9DA0 /* Deck.swift */; };
+		D0F56EDC29F33FB5003C9DA0 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F56EDB29F33FB5003C9DA0 /* RulesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D0F56ECE29F2EACC003C9DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F56ED129F2EACC003C9DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F56ED329F2EACC003C9DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F56ED929F30797003C9DA0 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		D0F56EDB29F33FB5003C9DA0 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				D0F56EC529F2EACA003C9DA0 /* AppDelegate.swift */,
 				D0F56EC729F2EACA003C9DA0 /* SceneDelegate.swift */,
 				D0F56EC929F2EACA003C9DA0 /* CardSelectionVC.swift */,
+				D0F56EDB29F33FB5003C9DA0 /* RulesVC.swift */,
+				D0F56ED929F30797003C9DA0 /* Deck.swift */,
 				D0F56ECB29F2EACA003C9DA0 /* Main.storyboard */,
 				D0F56ECE29F2EACC003C9DA0 /* Assets.xcassets */,
 				D0F56ED029F2EACC003C9DA0 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F56EDA29F30797003C9DA0 /* Deck.swift in Sources */,
+				D0F56EDC29F33FB5003C9DA0 /* RulesVC.swift in Sources */,
 				D0F56ECA29F2EACA003C9DA0 /* CardSelectionVC.swift in Sources */,
 				D0F56EC629F2EACA003C9DA0 /* AppDelegate.swift in Sources */,
 				D0F56EC829F2EACA003C9DA0 /* SceneDelegate.swift in Sources */,
