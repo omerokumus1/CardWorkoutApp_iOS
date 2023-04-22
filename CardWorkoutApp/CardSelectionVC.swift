@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CardSelectionVC.swift
 //  CardWorkoutApp
 //
 //  Created by Ömer Faruk Okumuş on 21.04.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardSelectionVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
