@@ -69,6 +69,12 @@ class CardSelectionVC: UIViewController {
             
         ])
         
+        rulesButton.addTarget(self, action: #selector(goToRulesVC), for: .touchUpInside)
+        
+    }
+    
+    @objc private func goToRulesVC() {
+        present(RulesVC(), animated: true)
     }
 
 }

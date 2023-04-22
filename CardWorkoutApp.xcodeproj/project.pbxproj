@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0C8A4EC29F3E878006BABA8 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C8A4EB29F3E878006BABA8 /* RulesVC.swift */; };
 		D0F56EC629F2EACA003C9DA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F56EC529F2EACA003C9DA0 /* AppDelegate.swift */; };
 		D0F56EC829F2EACA003C9DA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F56EC729F2EACA003C9DA0 /* SceneDelegate.swift */; };
 		D0F56ECA29F2EACA003C9DA0 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F56EC929F2EACA003C9DA0 /* CardSelectionVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0C8A4EB29F3E878006BABA8 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 		D0F56EC229F2EACA003C9DA0 /* CardWorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F56EC529F2EACA003C9DA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F56EC729F2EACA003C9DA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				D0F56EC529F2EACA003C9DA0 /* AppDelegate.swift */,
 				D0F56EC729F2EACA003C9DA0 /* SceneDelegate.swift */,
 				D0F56EC929F2EACA003C9DA0 /* CardSelectionVC.swift */,
+				D0C8A4EB29F3E878006BABA8 /* RulesVC.swift */,
 				D0F56EDD29F3C999003C9DA0 /* CWButton.swift */,
 				D0F56ECE29F2EACC003C9DA0 /* Assets.xcassets */,
 				D0F56ED029F2EACC003C9DA0 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				D0F56ECA29F2EACA003C9DA0 /* CardSelectionVC.swift in Sources */,
 				D0F56EC629F2EACA003C9DA0 /* AppDelegate.swift in Sources */,
+				D0C8A4EC29F3E878006BABA8 /* RulesVC.swift in Sources */,
 				D0F56EE029F3E087003C9DA0 /* Deck.swift in Sources */,
 				D0F56EC829F2EACA003C9DA0 /* SceneDelegate.swift in Sources */,
 				D0F56EDE29F3C999003C9DA0 /* CWButton.swift in Sources */,
